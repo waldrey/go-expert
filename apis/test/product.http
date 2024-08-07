@@ -1,0 +1,30 @@
+POST http://localhost:8000/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Jesus",
+    "price": 10000000
+}
+
+###
+
+GET http://localhost:8000/products/7a899556-6a59-4f29-9eef-91a9ca7e93d0 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5AZG9lLmNvbSIsImV4cCI6MTcyMjk4NTgwMiwic3ViIjoiNWVjYjg0YzQtZmFjNS00ZjliLWE4OTUtOWRiOTdmMjQ0OGM5In0.3aExTUGhs7ylBZl2kaBGrISn1RTNJca7XYZSJ_xAAEc
+
+###
+
+GET http://localhost:8000/products HTTP/1.1
+
+###
+
+PUT http://localhost:8000/products/9904c2f2-90be-4074-8d6c-ac285906f5fa HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Jesus Max Level",
+    "price": 1000000000
+}
+
+###
+
+DELETE http://localhost:8000/products/507539ad-af22-4073-bf80-d2b0f0c3aafd HTTP/1.1
